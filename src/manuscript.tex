@@ -1,0 +1,50 @@
+\documentclass[11pt,a4paper]{jarticle}
+%
+\usepackage{amsmath,amssymb}
+\usepackage{bm}
+\usepackage{ascmac}
+\usepackage[dvipdfm]{hyperref}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{longtable}
+\usepackage{bookmark}
+\usepackage{booktabs}
+\usepackage{listings}
+\usepackage{float}
+
+\def\tightlist{\itemsep1pt\parskip0pt\parsep0pt}
+
+\let\ig\includegraphics
+\let\includegraphics\relax
+\newcommand{\includegraphics}[1]{% Center an image
+  \label{#1}{\ig[width=0.6\linewidth]{#1}}%
+}
+
+\floatstyle{ruled}
+\newfloat{codelisting}{h}{lop}
+\floatname{codelisting}{コード}
+\newcommand*\listoflistings{\listof{codelisting}{List of Listings}}
+
+\newcommand{\raw}[1]{%
+  #1%
+}
+
+\title {Weekly Report}
+\author {Yamamoto Tarou}
+
+
+\begin {document}
+
+\maketitle
+
+\input{build/abs}
+
+\newpage
+\tableofcontents
+\newpage
+\listoftables
+\newpage
+\listoffigures
+\newpage
+
+\input{build/main}
+\end{document}

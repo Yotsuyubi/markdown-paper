@@ -1,0 +1,24 @@
+{
+  "name": "markdown-paper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx gulp",
+    "lint": "npx textlint src/*.md",
+    "watch": "npx gulp watch"
+  },
+  "keywords": [],
+  "author": "Yotsuyubi <yotsuyubi.rosamu@gmail.com> (http://yotsuyubi.rosamu.example.com)",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp-replace": "^1.0.0",
+    "textlint": "^11.6.3"
+  },
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-exec": "^4.0.0",
+    "textlint-rule-arekoresore": "file:../textlint-rule-arekoresore",
+    "textlint-rule-preset-ja-technical-writing": "^3.1.3"
+  }
+}
